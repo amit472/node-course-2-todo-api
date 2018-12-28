@@ -22,9 +22,7 @@ var newTodo = new Todo({
     completedAt: 1234
 });
 newTodo.save().then((doc)=>{
-    console.log(JSON.stringify(doc, undefined, 2));
-},(e)=>{
-    console.log('Unable to save user')
+  
 }); 
 
 module.exports = {Todo};

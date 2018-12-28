@@ -20,8 +20,5 @@ var newUser = new User({
     completedAt: 1234
 });
 newUser.save().then((doc)=>{
-    console.log(JSON.stringify(doc, undefined, 2));
-},(e)=>{
-    console.log('Unable to save user')
-}); 
+    }); 
 module.exports = {User}
